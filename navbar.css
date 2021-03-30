@@ -1,0 +1,154 @@
+.navbar{
+ display: flex;
+ width:98%;
+padding: 1% 1% 1% 1%;
+align-items: center;
+background-color: rgb(20, 5, 30);
+justify-content:space-around;
+position: fixed;
+}
+
+.navbarLinks ul{
+display: flex;
+padding-right: 20%;
+}
+
+.navbarLinks li{
+    list-style: none;
+}
+.navbarLinks li{
+padding-right:10px;
+padding-left:10px;
+}
+
+.activePage{
+    color: rgb(186, 174, 201);
+    border-style:solid;
+    padding:3px;
+}
+.singInButton a, .navbarLinks a{
+    text-decoration: none;
+    color: rgb(186, 174, 201);
+    cursor:pointer;
+    font-size:20px;
+}
+
+.navbarLinks li a, .singInButton a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbarLinks li a:hover{
+    color:aqua;
+    background-color: rgba(0, 255, 255, 0.5);
+    padding:3px;
+}
+.singInButton a:hover{
+    border-radius: 50px;
+    background-color:rgba(0, 255, 255, 0.5);
+    color:aqua;
+    padding: 3px;
+}
+
+.burgerButton{
+position:absolute;
+top:1.5rem;
+right:1rem;
+display:none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 21px;
+}
+
+.burgerButton .bar{
+    height: 3px;
+    width: 100%;
+    background-color:rgb(186, 174, 201);
+    border-radius: 10px;
+}
+
+@media (max-width : 1145px){
+    .burgerButton{
+        display:flex;
+    }
+   .navbarLinks{
+       display: none;
+       width: 100%;
+    }
+    .singInButton{
+       display: none;
+       width:100%;
+    } 
+    .navbarLinks.active{
+        display: flex;
+    }
+
+    .singInButton.active{
+        width:100%;
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbarLinks ul{
+        width: 100%;
+        flex-direction: column;
+    }
+   
+    .navbar .navbarLinks li{
+        text-align: center;
+    }
+    .singInButton a{
+        align-items: flex-start;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbarLinks li a:hover{
+        color:aqua;
+        background-color:rgb(20, 5, 30);
+        padding:0px;
+    }
+
+    .navbarLinks .activePage{
+        color:aqua;
+        border:none;
+        padding:0px;
+    }
+
+    .singInButton a:hover{
+        border:none;
+        background-color:rgb(20, 5, 30);
+        color:aqua;
+        padding: 0px;
+    }
+    
+    
+}
+
+@media(max-width : 500px){
+    .logo{
+        align-self: flex-start;
+    }
+}
+
+@media(max-width:450px){
+    .logo{
+        max-width:85%;
+        height:auto;
+        padding-top: 0.5%;
+        padding-left: 0.5%;
+    }
+
+    .burgerButton{
+        top:1.3rem;
+    }
+}
+
+@media(max-width:340px){
+    .burgerButton{
+        top:0.8rem;
+        right:0.5rem;
+    }
+}
