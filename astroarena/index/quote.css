@@ -1,53 +1,52 @@
-.welcomeQuoteTable .welcome{
-    font-size: 60px;
-    padding-left:15px;
-    text-align: start;
-}
-.welcomeQuoteTable table{
-    width:100%
-}
-.welcomeQuoteTable .quoteTitle {
-    font-size: 30px;
-    text-align: end;
-    padding-right:10%;
+
+
+#welcomeTitle{
+    font-size: 170%;
+    padding: 50px 0 0 50px;
 }
 
-.welcomeQuoteTable .quoteText{
-    padding-left:0%;
-    padding-right:3%;
-    text-align: start;
+#textAndQuote{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 100%;
+    align-items: center;
 }
 
-.welcomeQuoteTable .quoteAuthor{
-    text-align: end;
+#text{
+    width: calc(50vw - 50px);
+    font-size: 120%;
 }
 
-.welcomeQuoteTable .introductoryText{
-    text-align: start;
-    padding-left:1%;
-    padding-right: 10%;
+#quote{
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.welcomeTitle{
-    display: none;
-    padding-left:5%;
+#quote p{
+    width: 30vw;
+    padding-bottom: 20px;
 }
 
-.introductoryTextSmallScreen{
-    display: none;
-    padding-left: 3%;
-    padding-right: 3%;
+#quoteTitle, #quoteText{
+    text-align: center;
 }
 
-@media(max-width:1145px){
-    .welcomeQuoteTable{
-        display:none;
+#quoteTitle{
+    font-size: 200%;
+}
+
+@media(max-width: 1145px){
+    #quote{
+        display: none;
     }
 
-    .welcomeTitle{
-        display: flex;
+    #text{
+        width: calc(100vw - 100px);
+        font-size: 120%;
+        padding-bottom: 20px;
     }
-    .introductoryTextSmallScreen{
-        display: flex;
-    }
+
+
+
 }
