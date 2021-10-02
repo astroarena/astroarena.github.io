@@ -42,9 +42,15 @@
     }
 
     #text{
-        width: calc(100vw - 100px);
+        width: 92vw;
         font-size: 120%;
         padding-bottom: 20px;
     }
+
+    #textAndQuote{
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
 
 }
