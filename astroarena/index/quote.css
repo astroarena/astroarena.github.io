@@ -1,0 +1,53 @@
+.welcomeQuoteTable .welcome{
+    font-size: 60px;
+    padding-left:15px;
+    text-align: start;
+}
+.welcomeQuoteTable table{
+    width:100%
+}
+.welcomeQuoteTable .quoteTitle {
+    font-size: 30px;
+    text-align: end;
+    padding-right:10%;
+}
+
+.welcomeQuoteTable .quoteText{
+    padding-left:0%;
+    padding-right:3%;
+    text-align: start;
+}
+
+.welcomeQuoteTable .quoteAuthor{
+    text-align: end;
+}
+
+.welcomeQuoteTable .introductoryText{
+    text-align: start;
+    padding-left:1%;
+    padding-right: 10%;
+}
+
+.welcomeTitle{
+    display: none;
+    padding-left:5%;
+}
+
+.introductoryTextSmallScreen{
+    display: none;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+@media(max-width:1145px){
+    .welcomeQuoteTable{
+        display:none;
+    }
+
+    .welcomeTitle{
+        display: flex;
+    }
+    .introductoryTextSmallScreen{
+        display: flex;
+    }
+}

@@ -1,0 +1,433 @@
+.olympiadsPannel ul{
+    position: fixed;
+    height: 100%;
+    top: 81px;
+    background-image: linear-gradient(rgb(20, 5, 30), rgb(50, 31, 63) );
+}
+
+.olympiadsPannelList{
+    list-style: none;
+
+}
+
+
+.olympiadsPannelList a{
+    text-decoration: none;
+    color: rgb(186, 174, 201);
+    display: block;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+}
+
+.olympiadsPannelTitle{
+    text-decoration: none;
+    color:crimson;
+    font-size: 190%;
+    padding-bottom: 15%;
+    padding-left:0;
+    text-align: center;
+}
+
+.olympiadsPannelList li .suggestionButton{
+    color:deepskyblue;
+}
+
+.olympiadsPannelList a:hover{
+    background-color: rgb(89, 69, 104);
+}
+
+.olympiadsPannelList .actualPage{
+    background-color: rgba(89, 69, 104, 0.678);
+}
+.olympiadsPageText{
+    padding: 2% 1% 0% 1%;
+    margin-left: 202px;
+    font-size: 150%;
+}
+
+.backButton{
+    margin-top:20%;  
+}
+
+.olympiadsPannel .backButton a{
+    padding-left: 20%;
+    color: rgb(186, 174, 201);
+    text-decoration: none;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .arrowButton:hover{
+      cursor: pointer;
+}
+
+  .arrowButton{
+    position: fixed;
+    top: 81px;
+    padding: 15px 30px 15px 30px;
+    background-color: rgb(20, 5, 30);    
+    display: none;
+}
+  
+  .ioaa{
+      opacity: 1;
+      transition: opacity 1s ease 0s; 
+}
+
+.olympTitle{
+    color:blueviolet;
+}
+
+
+
+@media(max-width:1145px){
+
+    .olympiadsPannel{
+       display: none;
+    }
+
+    .olympiadsPageText{
+        padding: 4% 2% 0% 2%;
+        margin: 0;
+    }
+
+    .arrowButton{
+        display: flex;
+    }
+
+    .arrowButton.active{
+        margin-left: 30vw;
+        animation-name: arrowButtonAppear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes arrowButtonAppear {
+        
+        from {
+            margin-left: 0;
+        }
+
+        to{
+            margin-left: 30vw;
+        }
+    }
+
+    .olympiadsPannel.active{
+        display: block;
+        width: 30vw;
+        animation-duration: 0.8s;
+        animation-name: olympiadsPannelAppear;
+    }
+
+    @keyframes olympiadsPannelAppear {
+        from {
+            width: 0%
+          }
+        
+          to {
+            width: 30vw;
+          }
+    }
+
+    .olympiadsPannelList.active{
+        height:100%;
+        width:30%;
+        display: flex;
+        flex-direction: column;
+        color: red;
+        animation-name: olympiadsPannelListAppear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes olympiadsPannelListAppear {
+        from{
+            margin-left: -30vw;
+        }
+
+        to {
+           margin-left: 0;
+        }
+    }
+
+    .right.active{
+        transform: rotate(135deg);
+        transition: transform 0.8s ease 0s;
+    }
+
+    .arrowButton.unactive{
+        top: 81px;
+        animation-name: arrowButtonDisappear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes arrowButtonDisappear {
+        
+        from {
+            margin-left: 30vw;
+        }
+
+        to{
+            margin-left: 0vw;
+        }
+    }
+
+    .olympiadsPannel.unactive, .olympiadsPannel.active.bActive{
+        display: block;
+        width: 0vw;
+        animation-duration: 0.8s;
+        animation-name: olympiadsPannelDisappear;
+    }
+
+    @keyframes olympiadsPannelDisappear {
+        from {
+            width: 30vw
+          }
+        
+          to {
+            width: 0;
+          }
+    }
+
+    .olympiadsPannelList.unactive, .olympiadsPannelList.bActive{
+        height:100%;
+        width:30%;
+        margin-left: -30vw;
+        display: flex;
+        flex-direction: column;
+        color: red;
+        animation-name: olympiadsPannelListDisappear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes olympiadsPannelListDisappear {
+        from{
+            margin-left: 0;
+        }
+
+        to {
+           margin-left: -30vw;
+        }
+    }
+
+
+
+    .right.unactive{
+        transform: rotate(-45deg);
+        transition: transform 0.8s ease 0s;
+    } 
+
+    .arrowButton.bActive{
+        display: none;
+    }
+
+    .olympiadsPageText{
+        padding-top: 41.8px;
+    }
+
+}
+
+@media(max-width: 730px){
+    
+    .olympiadsPannelList.active{
+        width: 220px;
+    }
+
+    .arrowButton{
+        top: 81px;
+    }
+
+    .arrowButton.active{
+        top: 81px;
+        margin-left: 220px;
+        animation-name: arrowButtonAppear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes arrowButtonAppear {
+        
+        from {
+            margin-left: 0;
+        }
+
+        to{
+            margin-left: 220px;
+        }
+    }
+
+
+    .olympiadsPannelList.active{
+        top: 81px;
+        height:100%;
+        width:220px;
+        display: flex;
+        flex-direction: column;
+        color: red;
+        animation-name: olympiadsPannelListAppear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes olympiadsPannelListAppear {
+        from{
+            margin-left: -220px;
+        }
+
+        to {
+           margin-left: 0;
+        }
+    }
+
+
+    .arrowButton.unactive{
+        top: 81px;
+        animation-name: arrowButtonDisappear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes arrowButtonDisappear {
+        
+        from {
+            margin-left: 220px;
+        }
+
+        to{
+            margin-left: 0;
+        }
+    }
+
+
+
+
+    .olympiadsPannelList.unactive, .olympiadsPannelList.bActive{
+        top: 81px;
+        height:100%;
+        width:220px;
+        margin-left: -220px;
+        display: flex;
+        flex-direction: column;
+        color: red;
+        animation-name: olympiadsPannelListDisappear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes olympiadsPannelListDisappear {
+        from{
+            margin-left: 0;
+        }
+
+        to {
+           margin-left: -220px;
+        }
+    }
+
+
+}
+
+@media(max-width:470px){
+
+    .olympiadsPageText{
+        padding-top: 38.4px;
+        font-size: 4vw;
+    }
+
+
+    .arrowButton{
+        top: calc(36px + 9.5vw);
+        padding: 10px 25px 10px 25px;
+    }
+
+    .arrowButton.active{
+        top: calc(36px + 9.5vw);
+        margin-left: 220px;
+        animation-name: arrowButtonAppear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes arrowButtonAppear {
+        
+        from {
+            margin-left: 0;
+        }
+
+        to{
+            margin-left: 220px;
+        }
+    }
+
+    .arrowButton.unactive{
+        top: calc(36px + 9.5vw);
+        animation-name: arrowButtonDisappear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes arrowButtonDisappear {
+        
+        from {
+            margin-left: 220px;
+        }
+
+        to{
+            margin-left: 0;
+        }
+    }
+
+
+    .olympiadsPannelList.active{
+        top: calc(36px + 9.5vw);
+        height:100%;
+        width:220px;
+        display: flex;
+        flex-direction: column;
+        color: red;
+        animation-name: olympiadsPannelListAppear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes olympiadsPannelListAppear {
+        from{
+            margin-left: -220px;
+        }
+
+        to {
+           margin-left: 0;
+        }
+    }
+
+
+
+    .olympiadsPannelList.unactive, .olympiadsPannelList.bActive{
+        top: calc(36px + 9.5vw);
+        height:100%;
+        width:220px;
+        margin-left: -220px;
+        display: flex;
+        flex-direction: column;
+        color: red;
+        animation-name: olympiadsPannelListDisappear;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes olympiadsPannelListDisappear {
+        from{
+            margin-left: 0;
+        }
+
+        to {
+           margin-left: -220px;
+        }
+    }
+
+
+
+}
+

@@ -1,0 +1,46 @@
+.groupOfTwo {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.olympiadFiles{
+    display: flex;
+    justify-content: space-around;
+}
+
+.groupOfOne{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+@media(max-width: 1145px){
+    
+    .olympiadFiles{
+        display: block;
+    }
+
+    .groupOfTwo{
+        width: 100%
+    }
+}
+
+@media(max-width: 400px){
+    a h1{
+        font-size: 11vw
+    }
+
+    h3 {
+        font-size: 8vw;
+    }
+}
+
+@media(max-width: 370px){
+
+    .olympiadFiles{
+        font-size: 6vw
+    }
+}
