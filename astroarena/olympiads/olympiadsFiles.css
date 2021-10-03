@@ -4,7 +4,7 @@
     width: 50%;
 }
 
-.olympiadFiles{
+.groupOfFour{
     display: flex;
     justify-content: space-around;
 }
@@ -13,13 +13,13 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-bottom: 5%;
     text-align: center;
+    padding: 0 20px 5% 20px;
 }
 
 @media(max-width: 1145px){
     
-    .olympiadFiles{
+    .groupOfFour{
         display: block;
     }
 
@@ -30,7 +30,7 @@
 
 @media(max-width: 400px){
     a h1{
-        font-size: 11vw
+        font-size: 11vw;
     }
 
     h3 {
@@ -40,7 +40,7 @@
 
 @media(max-width: 370px){
 
-    .olympiadFiles{
+    .groupOfFour{
         font-size: 6vw
     }
 }
