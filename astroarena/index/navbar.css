@@ -68,14 +68,16 @@ nav {
 
 .navbarLinks a:hover{
     color:aqua;
+    border-color: rgba(0, 255, 255, 0.5);
     background-color: rgba(0, 255, 255, 0.5);
     transition: color 0.5s;
+    transition: border-color 0.5s;;
     transition: background-color 0.5s;
 }
 
 
 .navbarLinks .active{
-    border: 2px solid rgba(0, 255, 255, 0.5);
+    border: 2px solid rgb(186, 174, 201);
 }
 
 
