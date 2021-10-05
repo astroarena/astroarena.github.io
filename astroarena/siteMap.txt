@@ -1,0 +1,11 @@
+https://astroarena.github.io/astroarena/index.html
+https://astroarena.github.io/astroarena/olympiads/olympiads.html
+https://astroarena.github.io/astroarena/olympiads/ioaa.html
+https://astroarena.github.io/astroarena/olympiads/iao.html
+https://astroarena.github.io/astroarena/olympiads/usaaao.html
+https://astroarena.github.io/astroarena/olympiads/gecaa.html
+https://astroarena.github.io/astroarena/olympiads/suggestion.html
+https://astroarena.github.io/astroarena/events/events.html
+https://astroarena.github.io/astroarena/forum/forum.html
+https://astroarena.github.io/astroarena/about/about.html
+https://astroarena.github.io/astroarena/signIn/signIn.html
