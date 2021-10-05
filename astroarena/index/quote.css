@@ -52,3 +52,10 @@
 
     
 }
+
+
+@media(max-width: 360px){
+    #welcomeTitle{
+        padding-left: 10px;
+    }
+}
